@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #0f1522;
+  color: #fff;
+}
+p,
+a,
+li {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+/* -----------------------------------------------
+          ----------Navigation----------
+------------------------------------------------  */
+
+nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .nav ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 1rem;
+}
+nav .nav ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+}
+.nav ul li:first-child {
+  background-color: #673deb;
+  border-radius: 1.5rem;
+}
+
+/* -----------------------------------------------
+        ----------Hero Section----------
+------------------------------------------------ */
+.section {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+/* ----------Hero Section Up---------- */
+.section-up {
+  display: flex;
+  justify-content: flex-end;
+  width: 48%;
+  padding: 2.5rem;
+}
+.text img {
+  display: inline;
+  width: 3rem;
+}
+.text .hi {
+  display: inline;
+  font-size: 2.2rem;
+}
+h1 {
+  font-size: 3.5rem;
+}
+.developer {
+  color: #a6ce28;
+  font-size: 2.2rem;
+}
+
+/* ----------Hero Section down---------- */
+.section-down {
+  display: flex;
+  justify-content: flex-start;
+  width: 52%;
+}
+.image img {
+  width: 35rem;
+}
+
+/* -----------------------------------------------
+        ----------Hero Section 2----------
+------------------------------------------------ */
+
+.section2 .Projects h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  text-decoration: underline solid #0000ff;
+  cursor: pointer;
+}
+.section2 .img ul {
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4";
+  justify-content: center;
+  grid-gap: 1rem;
+  text-align: center;
+}
+.section2 .img ul li {
+  font-size: 1.1rem;
+}
+.section2 .img ul li img {
+  width: 22.5rem;
+  display: grid;
+  align-items: center;
+}
+
+/* -----------------------------------------------
+        ----------Footer----------
+------------------------------------------------ */
+footer div a {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-decoration: underline #0000ff;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0rem;
+}
+footer div img {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+/* -----------------------------------------------
+      ----------responsive Design----------
+------------------------------------------------ */
+
+/* ----------Extra Small Device 0px-600px---------- */
+
+@media only screen and (max-width: 576px) {
+  .nav ul {
+    display: none;
+  }
+  img[alt="menu"] {
+    display: block;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  img[alt="pc-image"] {
+    width: 60vw;
+  }
+  .text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  .text2 h1 {
+    font-size: 40px;
+  }
+  .text2 h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .img {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .section2 div h3 {
+    font-size: 35px;
+  }
+  footer div a {
+    font-size: 35px;
+  }
+}
+
+/* Sorry I could not do this project well, but I will do next project very well */
